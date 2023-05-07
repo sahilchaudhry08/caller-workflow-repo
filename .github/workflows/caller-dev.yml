@@ -15,7 +15,6 @@ on:
             types: [closed]
             branches:
               - dev
-              - main
     
   workflow_dispatch:
 

@@ -4,6 +4,7 @@ run-name: ${{ github.ref_name }} by @${{ github.actor }}
 
 concurrency:
   group: dev
+  cancel-in-progress: true
 
 on:
   push:

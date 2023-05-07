@@ -14,9 +14,11 @@ on:
        - main
        
   pull_request:
+            types: [closed]
             branches:
               - test*
               - dev
+              - main
     
   workflow_dispatch:
 

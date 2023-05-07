@@ -10,6 +10,7 @@ on:
   push:
     branches-ignore:
            - dev
+           - main
        
   pull_request:
             types: [closed]

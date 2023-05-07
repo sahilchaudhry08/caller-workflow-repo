@@ -11,6 +11,9 @@ on:
     branches-ignore:
            - dev
            - main
+   
+    paths-ignore:
+           - '**/caller-state.yml'
        
   pull_request:
             types: [closed]

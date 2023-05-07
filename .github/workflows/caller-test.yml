@@ -3,7 +3,7 @@ name: test-caller-workflow
 run-name: ${{ github.ref_name }} by @${{ github.actor }}
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: dev
 
 on:
   push:

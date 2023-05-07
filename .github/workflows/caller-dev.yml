@@ -1,4 +1,4 @@
-name: test-caller-workflow
+name: dev-caller-workflow
 
 run-name: ${{ github.ref_name }} by @${{ github.actor }}
 
@@ -15,12 +15,11 @@ on:
             types: [closed]
             branches:
               - dev
-              - main
     
   workflow_dispatch:
 
 jobs:
-  climateiq-terraform-dev:
+  dev-workflow:
     uses: sahilchaudhry08/test-reusable-workflow/.github/workflows/reusable-test.yml@dev
     with:
       TF_VERSION: "1.0.0"
